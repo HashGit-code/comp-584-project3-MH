@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A responsive California road trip guide built with CSS Grid.">
+    <title>Golden State Routes</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+    <header class="site-header">
+      <p class="eyebrow">A responsive California road trip guide</p>
+      <h1>Golden State Routes</h1>
+      <p class="intro">Build a weekend around ocean roads, mountain air, desert light, and unforgettable stops.</p>
+    </header>
+
+    <main class="wrapper">
+
+      <!-- Grid section 1: four equal destination cards on desktop -->
+      <section class="row" aria-labelledby="row-one-title">
+        <h2 class="section-title" id="row-one-title">Start with the icons</h2>
+
+        <article class="card col-1">
+          <img src="images/golden-gate.jpg" alt="Golden Gate Bridge glowing in warm sunrise light">
+          <div class="card-content">
+            <p class="card-number">01 · San Francisco</p>
+            <h3>Golden Gate Sunrise</h3>
+            <p>Start early at Battery Spencer, then follow the waterfront toward the Presidio and Crissy Field.</p>
+            <a href="https://www.nps.gov/goga/index.htm" target="_blank" rel="noopener">Plan this stop <span aria-hidden="true">→</span></a>
+          </div>
+        </article>
+
+        <article class="card col-1">
+          <img src="images/big-sur.jpg" alt="Rugged Big Sur coastline and turquoise Pacific Ocean">
+          <div class="card-content">
+            <p class="card-number">02 · Highway 1</p>
+            <h3>Big Sur Coast</h3>
+            <p>Trace cliffside curves past Bixby Bridge, redwood groves, and wide Pacific overlooks.</p>
+            <a href="https://www.parks.ca.gov/?page_id=570" target="_blank" rel="noopener">Plan this stop <span aria-hidden="true">→</span></a>
+          </div>
+        </article>
+
+        <article class="card col-1">
+          <img src="images/yosemite.jpg" alt="Yosemite Valley with granite cliffs and a waterfall">
+          <div class="card-content">
+            <p class="card-number">03 · Sierra Nevada</p>
+            <h3>Yosemite Valley</h3>
+            <p>Walk beside the Merced River and look up at El Capitan, Half Dome, and seasonal waterfalls.</p>
+            <a href="https://www.nps.gov/yose/index.htm" target="_blank" rel="noopener">Plan this stop <span aria-hidden="true">→</span></a>
+          </div>
+        </article>
+
+        <article class="card col-1">
+          <img src="images/joshua-tree.jpg" alt="Joshua trees and boulders at sunset in the desert">
+          <div class="card-content">
+            <p class="card-number">04 · High Desert</p>
+            <h3>Joshua Tree</h3>
+            <p>Explore sculpted boulders by day and stay after sunset for a brilliant desert sky.</p>
+            <a href="https://www.nps.gov/jotr/index.htm" target="_blank" rel="noopener">Plan this stop <span aria-hidden="true">→</span></a>
+          </div>
+        </article>
+      </section>
+
+      <!-- Grid section 2: two cards spanning two tracks each on desktop -->
+      <section class="row" aria-labelledby="row-two-title">
+        <h2 class="section-title" id="row-two-title">Choose your pace</h2>
+
+        <article class="card col-2 card-horizontal">
+          <img src="images/lake-tahoe.jpg" alt="Clear blue water and pine-covered mountains at Lake Tahoe">
+          <div class="card-content">
+            <p class="card-number">Mountain escape</p>
+            <h3>Slow days at Lake Tahoe</h3>
+            <p>Pack a lakeside picnic, walk the granite shoreline, and watch the afternoon light move across the Sierra.</p>
+            <a href="https://www.fs.usda.gov/ltbmu" target="_blank" rel="noopener">Explore Tahoe <span aria-hidden="true">→</span></a>
+          </div>
+        </article>
+
+        <article class="card col-2 card-horizontal">
+          <img src="images/santa-monica.jpg" alt="Santa Monica Pier and Ferris wheel beside the ocean">
+          <div class="card-content">
+            <p class="card-number">Coastal energy</p>
+            <h3>Sunset in Santa Monica</h3>
+            <p>Bike the beach path, stop at the pier, and finish with the Pacific turning gold beyond the Ferris wheel.</p>
+            <a href="https://www.santamonica.com/things-to-do/santa-monica-pier/" target="_blank" rel="noopener">Explore the pier <span aria-hidden="true">→</span></a>
+          </div>
+        </article>
+      </section>
+
+      <!-- Grid section 3: a one-track card beside a three-track feature -->
+      <section class="row" aria-labelledby="row-three-title">
+        <h2 class="section-title" id="row-three-title">Go beyond the familiar</h2>
+
+        <article class="card col-1 row-three-small">
+          <img src="images/death-valley.jpg" alt="Golden sand dunes in Death Valley">
+          <div class="card-content">
+            <p class="card-number">Desert detail</p>
+            <h3>Death Valley</h3>
+            <p>See rippled dunes and immense horizons in the soft light of morning.</p>
+            <a href="https://www.nps.gov/deva/index.htm" target="_blank" rel="noopener">Visit the park <span aria-hidden="true">→</span></a>
+          </div>
+        </article>
+
+        <article class="card col-3 feature-card">
+          <img src="images/sequoia.jpg" alt="A walking trail beneath giant sequoia trees">
+          <div class="card-content">
+            <p class="card-number">Featured route</p>
+            <h3>Walk among giants</h3>
+            <p>Sequoia’s forest roads lead to trees that have stood for thousands of years. Take the Congress Trail for an easy loop through the Giant Forest.</p>
+            <a href="https://www.nps.gov/seki/index.htm" target="_blank" rel="noopener">Discover Sequoia <span aria-hidden="true">→</span></a>
+          </div>
+        </article>
+      </section>
+
+      <!-- Grid section 4: one card spanning all four tracks -->
+      <section class="row" aria-labelledby="row-four-title">
+        <h2 class="section-title" id="row-four-title">One perfect basecamp</h2>
+
+        <article class="card col-4 panorama-card">
+          <img src="images/palm-springs.jpg" alt="Midcentury home and pool framed by palms in Palm Springs">
+          <div class="card-content">
+            <p class="card-number">Design, sun, and desert air</p>
+            <h3>Make Palm Springs your basecamp</h3>
+            <p>Spend the morning with midcentury architecture, cool off by the pool, and drive toward the mountains before sunset.</p>
+            <a href="https://visitpalmsprings.com/" target="_blank" rel="noopener">Build a Palm Springs day <span aria-hidden="true">→</span></a>
+          </div>
+        </article>
+      </section>
+
+      <!-- Grid section 5: named areas create a responsive 1-2-1 layout -->
+      <section class="row row-five" aria-labelledby="row-five-title">
+        <h2 class="section-title" id="row-five-title">Three ways to find the coast</h2>
+
+        <article class="card col-1 coast-side">
+          <img src="images/malibu.jpg" alt="Rocky Malibu beach under a clear sky">
+          <div class="card-content">
+            <p class="card-number">North</p>
+            <h3>Malibu</h3>
+            <p>Find pocket beaches and ocean overlooks along Pacific Coast Highway.</p>
+            <a href="https://www.parks.ca.gov/?page_id=633" target="_blank" rel="noopener">See the coast <span aria-hidden="true">→</span></a>
+          </div>
+        </article>
+
+        <article class="card col-2 coast-feature">
+          <img src="images/poppy-fields.jpg" alt="Orange California poppies covering rolling hills">
+          <div class="card-content">
+            <p class="card-number">Seasonal detour</p>
+            <h3>Follow the wildflowers</h3>
+            <p>Spring rain can cover California’s hills in orange and gold. Stay on marked trails so the bloom remains beautiful for everyone.</p>
+            <a href="https://www.parks.ca.gov/?page_id=627" target="_blank" rel="noopener">Check bloom conditions <span aria-hidden="true">→</span></a>
+          </div>
+        </article>
+
+        <article class="card col-1 coast-side">
+          <img src="images/san-diego.jpg" alt="Coastal cliffs and blue ocean near San Diego">
+          <div class="card-content">
+            <p class="card-number">South</p>
+            <h3>San Diego Cliffs</h3>
+            <p>End the route on bluff trails above bright blue coves and crashing surf.</p>
+            <a href="https://www.sandiego.gov/park-and-recreation/parks/regional/shoreline/sunset" target="_blank" rel="noopener">Find the viewpoint <span aria-hidden="true">→</span></a>
+          </div>
+        </article>
+      </section>
+
+      <!-- Grid section 6: auto-fit creates a responsive five-item checklist -->
+      <section class="row row-six" aria-labelledby="row-six-title">
+        <h2 class="section-title" id="row-six-title">Road-ready checklist</h2>
+
+        <article class="tip-card">
+          <span aria-hidden="true">01</span>
+          <h3>Check roads</h3>
+          <p>Review closures before leaving.</p>
+        </article>
+
+        <article class="tip-card">
+          <span aria-hidden="true">02</span>
+          <h3>Start early</h3>
+          <p>Beat traffic and find parking.</p>
+        </article>
+
+        <article class="tip-card">
+          <span aria-hidden="true">03</span>
+          <h3>Pack water</h3>
+          <p>Carry more than you expect.</p>
+        </article>
+
+        <article class="tip-card">
+          <span aria-hidden="true">04</span>
+          <h3>Save maps</h3>
+          <p>Cell service can disappear.</p>
+        </article>
+
+        <article class="tip-card">
+          <span aria-hidden="true">05</span>
+          <h3>Leave no trace</h3>
+          <p>Pack out everything you bring.</p>
+        </article>
+      </section>
+
+    </main>
+
+    <footer class="site-footer">
+      <p>Travel thoughtfully. Protect the places that make California unforgettable.</p>
+    </footer>
+  </body>
+
+</html>
